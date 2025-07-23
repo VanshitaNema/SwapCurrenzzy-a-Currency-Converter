@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SwapCurrenzzy</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/favicon.png" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="title">
+          <h1>SwapCurrenzzy</h1>
+        </div>
+      </nav>
+
+      <section>
+        <div>
+          <h1>
+            Exchange Smarter.<br />
+            Convert Faster.<br />
+            Global.
+          </h1>
+          <p class="subtitle"></p>
+        </div>
+      </section>
+
+      <div class="mainSection">
+        <div class="currencyCalculator">
+          <div class="padding">
+            <div class="textContent">
+              <h1>
+                Currency <br />
+                Calculator
+              </h1>
+              <br />
+              <p>
+                Choose the currency and the <br />amounts to get the exchange
+                rate
+              </p>
+            </div>
+            <div class="currencySelect">
+              <div class="selector">
+                <div class="leftBox">
+                  <label for="currency">FROM</label>
+                  <select name="currency" class="currency" id="from"></select>
+                </div>
+                <div class="rightBox">
+                  <label for="currency">TO</label>
+                  <select name="currency" class="currency" id="to"></select>
+                </div>
+              </div>
+              <div class="swapCurrency" onClick="switchText()">
+                SWAP CURRENCY
+              </div>
+            </div>
+            <div class="currencySelect">
+              <div class="leftBox">
+                <label for="">AMOUNT</label>
+                <input type="number" id="num" placeholder="0" />
+              </div>
+              <div class="swapCurrency" id="btn">CALCULATE</div>
+              <p id="ans" class="currencyAnswer">0</p>
+              <img src="./img/rate.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <img src="./img/bg-vector.1b89fc42.svg" alt="" class="bg" />
+    <!-- <a
+      href="https://github.com/chaitanyashimpi/currency-exchange"
+      target="_blank"
+    >
+      <span class="github"></span>
+      <i class="fab fa-github githublogo"></i>
+    </a> -->
+
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
